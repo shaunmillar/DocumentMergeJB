@@ -48,7 +48,7 @@ AEM version : v6.2.0, GM
 
 Before the resulting war file (see target folder) is deployed to the JBOSS server, the module path must be created, and two files added to the new path. 
 
-New module path to ve created on server: modules/system/layers/base/ca/bc/gov/pssg/docmerge/main
+New module path to be created on server: modules/system/layers/base/ca/bc/gov/pssg/docmerge/main
 
 Add module.xml to new path. Contents:
 ```
