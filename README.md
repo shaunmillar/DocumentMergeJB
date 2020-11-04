@@ -51,20 +51,20 @@ Before the resulting war file (see target folder) is deployed to the JBOSS serve
 New module path to ve created on server: modules/system/layers/base/ca/bc/gov/pssg/docmerge/main
 
 Add module.xml to new path. Contents:
-
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <module xmlns="urn:jboss:module:1.0" name="ca.bc.gov.pssg.docmerge">
         <resources>
                 <resource-root path="."/>
         </resources>
 </module>
-
+```
 Add docmerge.properties. Contents: 
-
+```
 docmerge.aem.endpoint=[AEM sever endpoint]
 docmerge.aem.user=[AEM server username]
 docmerge.aem.password=[AEM server password]
-
+```
 Lastly, bounce the server. Then deploy the WAR file resulting from the build. 
 
 
