@@ -69,7 +69,7 @@ public class MergeServiceImpl implements MergeService {
 			logger.info("Calling mergePDFDocuments...");
 			
 			// Set AEM connection properties, SOAP mode. 
-			// Properties are fetched from either OpenShift Secrets or if running locally, ENV VARIABLES. 
+			// Properties (endpoint, user, password) are fetched from properties file located on JBOSS module path. 
 			Properties connectionProps = new Properties();
 			connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, aemEndpoint);
 			connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL, ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
